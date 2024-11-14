@@ -92,7 +92,8 @@ In a VS Code terminal in the root project folder (cintel-04-local).
 
 We're running a script that was installed into our project virtual environment .venv folder - you can take a quick look in there to see the provided scripts. Your command is running one of the scripts installed. (Don't make any changes in the .venv folder - always work from the root project folder, but you can - and probably should - look around a bit in .venv to help understand how it is used.) 
 
-For Windows, run `.venv\Scripts\Activate` or `.venv\Scripts\activate` in the terminal. For macOS/Linux, run source `.venv/bin/activate`.
+For Windows, run `.venv\Scripts\Activate` or `.venv\Scripts\activate` in the terminal. 
+For macOS/Linux, run source `.venv/bin/activate`.
 
 .venv\Scripts\Activate
 .venv\Scripts\activate
@@ -112,3 +113,7 @@ Run pip install -r requirements.txt to install the required Python packages list
 py -m pip install --upgrade pip setuptools
 
 py -m pip install --upgrade -r requirements.txt
+
+After all that, you should be able to open your project folder (cintel-04-local) in VS Code. Open a terminal and activate the project (anytime you open a new terminal) and run the shiny app.
+
+shiny run --reload --launch-browser penguins/app.py
